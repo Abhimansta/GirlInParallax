@@ -1,0 +1,265 @@
+/* CSS Document */
+
+/* parallax hero */
+
+.main {
+	position: relative;
+	background-color: hsla(205,96%,56%,0.39);
+	top: 780px;
+	padding: 50px 200px;
+	margin: 30px 50px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+
+.sam {
+	background: url('../images/background.jpg');
+	background-attachment: fixed;
+	margin-bottom: -30px;
+}
+
+.hero-container {
+    
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 740px;
+    width: 100%;
+	left: 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.blur-bgimage::before {
+    content: "";
+    position: absolute;
+    width : 99%;
+    height: 740px;
+    background: inherit;
+    z-index: -1;
+    
+    filter        : blur(10px);
+    -moz-filter   : blur(10px);
+    -webkit-filter: blur(10px);
+    -o-filter     : blur(10px);
+    
+    transition        : all 2s linear;
+    -moz-transition   : all 2s linear;
+    -webkit-transition: all 2s linear;
+    -o-transition     : all 2s linear;
+}
+
+/* ball 1 2 3 7 6*/
+	
+
+
+    .hero-container img:first-child {
+        position: absolute;
+        height: 42.71px;
+        width: 42.71px;
+        top: 28%;
+        left: 60%;
+        display: block;
+        margin: 0px auto;
+        align-items: center;
+		filter: none;
+		filter: blur(1px);
+		
+
+    }
+
+    .hero-container img:nth-child(2) {
+        position: absolute;
+        height: 78.803px;
+        width: 78.803px;
+        top: 20%;
+        left: 64%;
+        display: block;
+        margin: 0px auto;
+        align-items: center;
+		filter: blur(2px);
+    }
+
+    .hero-container img:nth-child(3) {
+        position: absolute;
+        height: 89.841px;
+        width: 89.841px;
+        top: 10%;
+        left: 10%;
+        display: block;
+        margin: 0px auto;
+        align-items: center;
+		filter: blur(3px);
+    }
+
+    .hero-container img:nth-child(4) {
+        position: absolute;
+        height: 98.348px;
+        width: 98.348px;
+        top: -8%;
+        left: 30%;
+        display: block;
+		margin: 0 auto;
+        align-items: center;
+		filter: blur(4px);
+    }
+/*  girl is here */
+    .hero-container img:nth-child(5) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        margin-top: -308px;
+        margin-left: -500px;
+        align-items: center;
+		filter: drop-shadow(2px 2px 2px);
+		filter: blur(1px);
+    }
+
+	/* images above girl */
+
+/* ball 4 5 8 9 10 */
+
+.hero-container img:nth-child(6) {
+        position: absolute;
+        height: 166.5px;
+        width: 166.5px;
+        bottom: 35%;
+        right: 10%;
+        display: block;
+        margin: 0px auto;
+        align-items: center;
+	filter: blur(6px);
+    }
+
+    .hero-container img:nth-child(7) {
+        position: absolute;
+        height: 276.174px;
+        width: 276.174px;
+        top: -20%;
+        right: 15%;
+        display: block;
+        margin: 0px auto;
+        align-items: center;
+		filter: blur(7px);
+    }
+
+    .hero-container img:nth-child(8) {
+        position: absolute;
+        height: 198.341px;
+        width: 198.341px;
+        bottom: 10%;
+        left: 1%;
+        display: block;
+		margin: 0 auto;
+        align-items: center;
+		filter: blur(9px);
+    }
+
+.hero-container img:nth-child(9) {
+        position: absolute;
+        height: 178.564px;
+        width: 178.564px;
+        top: 20%;
+        left: -5%;
+        display: block;
+        margin: 0px auto;
+        align-items: center;
+	filter: blur(8px);
+    }
+
+    .hero-container img:nth-child(10) {
+        position: absolute;
+        height: 774.173px;
+        width: 774.173px;
+        bottom: -80%;
+        right: -20%;
+        display: block;
+        margin: 0px auto;
+        align-items: center;
+		filter: blur(10px);
+    }
+
+
+/* parallax hero */
+
+
+/* nav bar */
+
+#navibar * {
+	display: inline-block;
+}
+
+
+#navibar * {
+    line-height: 14px;
+    box-sizing: border-box;
+}
+
+#navibar {
+	
+	 position: fixed;
+    overflow: hidden;
+    height: 34px;
+	width: 100%;
+	left: 0;
+	top: 720px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    background: #f8f8f8;
+    text-align: center;
+    box-sizing: border-box;
+	z-index: 4;
+	
+	
+}
+
+hr {
+	width: 500px;
+	color: antiquewhite;
+	
+}
+
+nav {
+
+    text-transform: uppercase;
+    white-space: nowrap;
+    line-height: 38px;
+}
+
+#navibar .navbar ul li a {
+		text-decoration: none;
+		color: black;
+	transition: all .5s ease-in-out;
+}
+
+#navibar .navbar ul li a:hover {
+		text-decoration: line-through;
+
+}
+
+
+#navibar .navbar ul {
+    margin: 0 auto;
+	margin-top: 5px;
+    text-align: center;
+    justify-content: space-between;
+	
+}
+
+#navibar .navbar ul li {
+	position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 1%;
+    margin: 4px 2px;
+    transition: opacity 0.3s;
+}
+
+#navibar .navbar ul li:last-child {
+	border-right: none;
+}
